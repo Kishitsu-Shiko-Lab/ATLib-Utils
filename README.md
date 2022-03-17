@@ -144,6 +144,10 @@ $type\_name は [Mouse](https://metacpan.org/pod/Mouse) の型名に準拠して
 - Ref
 - Maybe\[ &lt;type\_name > \]
 
+# インストール方法
+
+$cpanm [https://github.com/Kishitsu-Shiko-Lab/ATLib-Utils.git](https://github.com/Kishitsu-Shiko-Lab/ATLib-Utils.git)
+
 # AUTHOR
 
 atdev01 &lt;mine\_t7 at hotmail.com>

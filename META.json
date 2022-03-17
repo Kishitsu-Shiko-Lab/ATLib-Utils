@@ -55,16 +55,19 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/Katagi-Shiko-Lab/ATLib-Utils/issues"
+         "web" : "https://github.com/Kishitsu-Shiko-Lab/ATLib-Utils/issues"
       },
-      "homepage" : "https://github.com/Katagi-Shiko-Lab/ATLib-Utils",
+      "homepage" : "https://github.com/Kishitsu-Shiko-Lab/ATLib-Utils",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/Katagi-Shiko-Lab/ATLib-Utils.git",
-         "web" : "https://github.com/Katagi-Shiko-Lab/ATLib-Utils"
+         "url" : "git://github.com/Kishitsu-Shiko-Lab/ATLib-Utils.git",
+         "web" : "https://github.com/Kishitsu-Shiko-Lab/ATLib-Utils"
       }
    },
-   "version" : "v0.2.0",
+   "version" : "0.2.1",
+   "x_contributors" : [
+      "atdev01ux2 <mine_t7@hotmail.com>"
+   ],
    "x_serialization_backend" : "JSON::PP version 4.06",
    "x_static_install" : 1
 }

@@ -1,6 +1,6 @@
 package ATLib::Utils;
 use 5.016_001;
-use version; our $VERSION = version->declare('v0.2.0');
+use version; our $VERSION = version->declare('0.2.1');
 use strict;
 use warnings;
 use utf8;
@@ -372,6 +372,10 @@ Ref
 Maybe[ E<lt>type_name E<gt> ]
 
 =back
+
+=head1 インストール方法
+
+$cpanm L<< https://github.com/Kishitsu-Shiko-Lab/ATLib-Utils.git >>
 
 =head1 AUTHOR
 
