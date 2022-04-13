@@ -2,7 +2,11 @@ Revision history for Perl extension ATLib-Utils
 
 {{$NEXT}}
 
-0.2.1 2022-03-17T15:43:16Z
+v0.2.2 2022-04-13T15:15:11Z
+
+    - Version 指定方法の誤記を修正
+
+v0.2.1 2022-03-17T15:43:16Z
 
     - PODにインストール方法を追記
 

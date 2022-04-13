@@ -10,7 +10,6 @@
     <option name="perlInterpreter" value="Local, System: Perl 5.32.0" />
   </component>
   <component name="Perl5XSubsState">
-    <option name="isActual" value="false" />
     <option name="myFilesMap">
       <map>
         <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-thread-multi/Devel/auto/Devel/NYTProf/NYTProf.so" value="1641991562000" />
@@ -24,6 +23,8 @@
         <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-thread-multi/auto/Mouse/Mouse.so" value="1638748280000" />
         <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-thread-multi/auto/PadWalker/PadWalker.so" value="1640088889000" />
         <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-thread-multi/auto/Params/Util/Util.so" value="1641991570000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-thread-multi/auto/Params/Validate/XS/XS.so" value="1647521233000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-thread-multi/auto/Term/ReadKey/ReadKey.so" value="1647521236000" />
         <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-thread-multi/auto/Test/LeakTrace/LeakTrace.so" value="1638748272000" />
       </map>
     </option>

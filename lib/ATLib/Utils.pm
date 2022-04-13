@@ -1,6 +1,6 @@
 package ATLib::Utils;
 use 5.016_001;
-use version; our $VERSION = version->declare('0.2.1');
+use version; our $VERSION = version->declare('v0.2.2');
 use strict;
 use warnings;
 use utf8;
