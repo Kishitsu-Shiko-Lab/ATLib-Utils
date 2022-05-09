@@ -7,7 +7,7 @@
         <option value="$USER_HOME$/perl5/lib/perl5/x86_64-linux-thread-multi" />
       </list>
     </option>
-    <option name="perlInterpreter" value="Local, System: Perl 5.32.0" />
+    <option name="perlInterpreter" value="Local, System: Perl 5.34.1" />
   </component>
   <component name="Perl5XSubsState">
     <option name="myFilesMap">

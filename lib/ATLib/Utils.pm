@@ -1,6 +1,6 @@
 package ATLib::Utils;
 use 5.016_001;
-use version; our $VERSION = version->declare('v0.2.2');
+use version; our $VERSION = version->declare('v0.2.3');
 use strict;
 use warnings;
 use utf8;
@@ -8,7 +8,7 @@ use utf8;
 use Exporter qw{ import };
 use Scalar::Util qw{ looks_like_number blessed};
 
-our @EXPORT_OK = qw{ is_number is_int as_type_of equals};
+our @EXPORT_OK = qw{ is_number is_int get_inner_type_name as_type_of equals};
 
 # Export Functions
 sub is_number
@@ -47,6 +47,22 @@ sub is_int
         }
     }
     return 0;
+}
+
+sub get_inner_type_name
+{
+    my ($type_name) = @_;
+
+    if (!defined $type_name)
+    {
+        return q{};
+    }
+
+    if ($type_name =~ m{^Maybe \[ ([\w:]+) \]}xms)
+    {
+        return $1;
+    }
+    return $type_name;
 }
 
 sub as_type_of
@@ -218,6 +234,9 @@ ATLib::Utils - ユーティリティ関数をインポートします。
     $result = is_int($object);      # $result == 0
     $result = is_int($ref);         # $result == 0
 
+    $inner_type_name = get_inner_type_name(q{ATLib::Std::String});          # ATLib::Std::String
+    $inner_type_name = get_inner_type_name(q{Maybe[ATLib::Std::String]});   # ATLib::Std::String
+
     $result = as_type_of(q{Bool}, undef);                   # $result == 0
     $result = as_type_of(q{Maybe[Bool]}, undef);            # $result == 1
     $result = as_type_of(q{Bool}, 0);                       # $result == 1
@@ -303,6 +322,10 @@ $target が数値かどうかを判定します。
 =head2 C<< $result = is_int($target)  >>
 
 $target が整数かどうかを判定します。
+
+=head2 C<< $inner_type_name = get_inner_type_name($type_name);  >>
+
+L<< Mouse >> の型名 $type_nameのうち、Maybe[]を含まない型を取得します。
 
 =head2 C<< $result = as_type_of($type_name, $target)  >>
 

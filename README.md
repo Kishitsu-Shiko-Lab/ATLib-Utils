@@ -31,6 +31,9 @@ ATLib::Utils - ユーティリティ関数をインポートします。
     $result = is_int($object);      # $result == 0
     $result = is_int($ref);         # $result == 0
 
+    $inner_type_name = get_inner_type_name(q{ATLib::Std::String});          # ATLib::Std::String
+    $inner_type_name = get_inner_type_name(q{Maybe[ATLib::Std::String]});   # ATLib::Std::String
+
     $result = as_type_of(q{Bool}, undef);                   # $result == 0
     $result = as_type_of(q{Maybe[Bool]}, undef);            # $result == 1
     $result = as_type_of(q{Bool}, 0);                       # $result == 1
@@ -116,6 +119,10 @@ $target が数値かどうかを判定します。
 ## `$result = is_int($target)`
 
 $target が整数かどうかを判定します。
+
+## `$inner_type_name = get_inner_type_name($type_name);`
+
+[Mouse](https://metacpan.org/pod/Mouse) の型名 $type\_nameのうち、Maybe\[\]を含まない型を取得します。
 
 ## `$result = as_type_of($type_name, $target)`
 

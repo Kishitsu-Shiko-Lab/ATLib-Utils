@@ -2,6 +2,10 @@ Revision history for Perl extension ATLib-Utils
 
 {{$NEXT}}
 
+v0.2.3 2022-05-09T14:38:08Z
+
+    - 関数 get_inner_type_name() を追加
+
 v0.2.2 2022-04-13T15:17:03Z
 
     - Version 指定方法の誤記を修正
